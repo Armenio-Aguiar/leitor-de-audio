@@ -1,0 +1,141 @@
+html,body{
+    margin: 0;
+    padding:0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    font-family: sans-serif;
+    box-shadow: border-box;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 7px 0px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+    padding:0px;
+}
+.playList{
+    width: 100%;
+    height: 450px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+}
+.listaContent{
+    position: relative;
+    left: 0;
+    top: 0px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    width: 100%;
+    height: 450px;
+}
+.listaContent input{
+ margin-top: 20px;
+ margin-left: 10px;
+ border: none;
+ outline: none;
+}
+.listaContent #ListaMusicas{
+    max-height: 450px;
+    overflow-y: auto;
+    width: 100%;
+    margin-top:-5px;
+}
+#ListaMusicas li{
+    list-style: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+.descricao{
+    width: 300px;
+}
+h2,i{
+    margin-bottom: 5px;
+    color: #777;
+}
+.descricao i{
+font-size: 20px;
+}
+.duracao{
+    width: 300px;
+    margin-top: 10px;
+}
+.barra{
+    width: 300px;
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 7px 0px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+progress{
+    height: 10px;
+    width: 0;
+    background-color: #333;
+    border-radius: 5px;
+}
+.ponto{
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+.tempo{
+    display: flex;
+    color: #333;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.icon{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.icon i{
+    font-size: 50px;
+    box-shadow: border-box;
+    cursor: pointer;
+}
+.icon i:nth-child(2),i:nth-child(3){
+    font-size: 80px;
+}
+#pause{
+    display: none;
+}
+.volume{
+    margin-top: 15px;
+    display: flex;
+}
+.volume p{
+    color: #000;
+    margin-left: 10px;
+}

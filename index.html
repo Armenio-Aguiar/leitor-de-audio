@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/music-metadata-browser/dist/music-metadata-browser.min.js"></script>
+    <title>player</title>
+</head>
+<body>
+    <div class="content">
+        <div class="playList">
+            <div class="image">
+                <img src="img/female-model-9565629_640.jpg" alt="">
+            </div>
+            <div class="listaContent">
+                <input type="file" name="" id="carregarMusicas" webkitdirectory multiple accept=".mp3">
+                    <ul id="ListaMusicas"></ul>
+            </div>
+        </div>
+        <div class="descricao">
+            <h2>Nome da musica</h2>
+            <i>cantor</i>
+        </div>
+        <div class="duracao">
+            <div class="barra">
+                <progress value="0" max="1" id="progress"></progress>
+                <div class="ponto"></div>
+            </div>
+            <div class="tempo">
+                <p  class="inicio">0:00</p>
+                <p class="fim">0:00</p>
+            </div>
+        </div>
+        <div class="icon">
+            <i class="fa fa-step-backward" aria-hidden="true" id="antes"></i>
+            <i class="fa-solid fa-circle-pause" id="pause"></i>
+            <i class="fa fa-play-circle" aria-hidden="true" id="play"></i>
+            <i class="fa fa-step-forward" aria-hidden="true" id="depois"></i>
+        </div>
+        <div class="volume">
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            <p style="color: #000;">100</p>
+        </div>
+        <audio src="musica/Joe-i believe in you - Copy.mp3"></audio>
+    </div>
+    <script src="logica.js"></script>
+</body>
+</html>
